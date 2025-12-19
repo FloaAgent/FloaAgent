@@ -1,0 +1,448 @@
+export interface PresetAction {
+  id: string;
+  nameKey: string;
+  descKey: string;
+  triggerTagKey: string;
+  level: number;
+  isDefault: boolean;
+  order: number;
+}
+
+export const PRESET_ACTIONS: PresetAction[] = [
+  {
+    id: "lv1_stand_idle",
+    nameKey: "presetActions.standIdle.name",
+    descKey: "presetActions.standIdle.desc",
+    triggerTagKey: "presetActions.standIdle.name",
+    level: 1,
+    isDefault: true,
+    order: 1,
+  },
+  {
+    id: "lv1_wave_hello",
+    nameKey: "presetActions.waveHello.name",
+    descKey: "presetActions.waveHello.desc",
+    triggerTagKey: "presetActions.waveHello.name",
+    level: 1,
+    isDefault: true,
+    order: 2,
+  },
+  {
+    id: "lv1_nod_yes",
+    nameKey: "presetActions.nodYes.name",
+    descKey: "presetActions.nodYes.desc",
+    triggerTagKey: "presetActions.nodYes.name",
+    level: 1,
+    isDefault: true,
+    order: 3,
+  },
+  {
+    id: "lv1_welcome",
+    nameKey: "presetActions.welcome.name",
+    descKey: "presetActions.welcome.desc",
+    triggerTagKey: "presetActions.welcome.name",
+    level: 1,
+    isDefault: false,
+    order: 4,
+  },
+  {
+    id: "lv1_relax_pose",
+    nameKey: "presetActions.relaxPose.name",
+    descKey: "presetActions.relaxPose.desc",
+    triggerTagKey: "presetActions.relaxPose.name",
+    level: 1,
+    isDefault: false,
+    order: 5,
+  },
+  {
+    id: "lv1_hair_fix",
+    nameKey: "presetActions.hairFix.name",
+    descKey: "presetActions.hairFix.desc",
+    triggerTagKey: "presetActions.hairFix.name",
+    level: 1,
+    isDefault: false,
+    order: 6,
+  },
+  {
+    id: "lv1_pray",
+    nameKey: "presetActions.pray.name",
+    descKey: "presetActions.pray.desc",
+    triggerTagKey: "presetActions.pray.name",
+    level: 1,
+    isDefault: false,
+    order: 7,
+  },
+  {
+    id: "lv1_pause",
+    nameKey: "presetActions.pause.name",
+    descKey: "presetActions.pause.desc",
+    triggerTagKey: "presetActions.pause.name",
+    level: 1,
+    isDefault: false,
+    order: 8,
+  },
+  {
+    id: "lv1_cute",
+    nameKey: "presetActions.cute.name",
+    descKey: "presetActions.cute.desc",
+    triggerTagKey: "presetActions.cute.name",
+    level: 1,
+    isDefault: false,
+    order: 9,
+  },
+
+  {
+    id: "lv2_shake_no",
+    nameKey: "presetActions.shakeNo.name",
+    descKey: "presetActions.shakeNo.desc",
+    triggerTagKey: "presetActions.shakeNo.name",
+    level: 2,
+    isDefault: true,
+    order: 1,
+  },
+  {
+    id: "lv2_think",
+    nameKey: "presetActions.think.name",
+    descKey: "presetActions.think.desc",
+    triggerTagKey: "presetActions.think.name",
+    level: 2,
+    isDefault: true,
+    order: 2,
+  },
+  {
+    id: "lv2_clap",
+    nameKey: "presetActions.clap.name",
+    descKey: "presetActions.clap.desc",
+    triggerTagKey: "presetActions.clap.name",
+    level: 2,
+    isDefault: true,
+    order: 3,
+  },
+  {
+    id: "lv2_reminder",
+    nameKey: "presetActions.reminder.name",
+    descKey: "presetActions.reminder.desc",
+    triggerTagKey: "presetActions.reminder.name",
+    level: 2,
+    isDefault: false,
+    order: 4,
+  },
+  {
+    id: "lv2_soft_hold",
+    nameKey: "presetActions.softHold.name",
+    descKey: "presetActions.softHold.desc",
+    triggerTagKey: "presetActions.softHold.name",
+    level: 2,
+    isDefault: false,
+    order: 5,
+  },
+  {
+    id: "lv2_confident",
+    nameKey: "presetActions.confident.name",
+    descKey: "presetActions.confident.desc",
+    triggerTagKey: "presetActions.confident.name",
+    level: 2,
+    isDefault: false,
+    order: 6,
+  },
+  {
+    id: "lv2_come_here",
+    nameKey: "presetActions.comeHere.name",
+    descKey: "presetActions.comeHere.desc",
+    triggerTagKey: "presetActions.comeHere.name",
+    level: 2,
+    isDefault: false,
+    order: 7,
+  },
+  {
+    id: "lv2_shy",
+    nameKey: "presetActions.shy.name",
+    descKey: "presetActions.shy.desc",
+    triggerTagKey: "presetActions.shy.name",
+    level: 2,
+    isDefault: false,
+    order: 8,
+  },
+  {
+    id: "lv2_circle",
+    nameKey: "presetActions.circle.name",
+    descKey: "presetActions.circle.desc",
+    triggerTagKey: "presetActions.circle.name",
+    level: 2,
+    isDefault: false,
+    order: 9,
+  },
+
+  {
+    id: "lv3_heart_like",
+    nameKey: "presetActions.heartLike.name",
+    descKey: "presetActions.heartLike.desc",
+    triggerTagKey: "presetActions.heartLike.name",
+    level: 3,
+    isDefault: true,
+    order: 1,
+  },
+  {
+    id: "lv3_dance",
+    nameKey: "presetActions.dance.name",
+    descKey: "presetActions.dance.desc",
+    triggerTagKey: "presetActions.dance.name",
+    level: 3,
+    isDefault: true,
+    order: 2,
+  },
+  {
+    id: "lv3_turn_back",
+    nameKey: "presetActions.turnBack.name",
+    descKey: "presetActions.turnBack.desc",
+    triggerTagKey: "presetActions.turnBack.name",
+    level: 3,
+    isDefault: true,
+    order: 3,
+  },
+  {
+    id: "lv3_ease",
+    nameKey: "presetActions.ease.name",
+    descKey: "presetActions.ease.desc",
+    triggerTagKey: "presetActions.ease.name",
+    level: 3,
+    isDefault: false,
+    order: 4,
+  },
+  {
+    id: "lv3_wake_up",
+    nameKey: "presetActions.wakeUp.name",
+    descKey: "presetActions.wakeUp.desc",
+    triggerTagKey: "presetActions.wakeUp.name",
+    level: 3,
+    isDefault: false,
+    order: 5,
+  },
+  {
+    id: "lv3_salute",
+    nameKey: "presetActions.salute.name",
+    descKey: "presetActions.salute.desc",
+    triggerTagKey: "presetActions.salute.name",
+    level: 3,
+    isDefault: false,
+    order: 6,
+  },
+  {
+    id: "lv3_proud",
+    nameKey: "presetActions.proud.name",
+    descKey: "presetActions.proud.desc",
+    triggerTagKey: "presetActions.proud.name",
+    level: 3,
+    isDefault: false,
+    order: 7,
+  },
+  {
+    id: "lv3_note",
+    nameKey: "presetActions.note.name",
+    descKey: "presetActions.note.desc",
+    triggerTagKey: "presetActions.note.name",
+    level: 3,
+    isDefault: false,
+    order: 8,
+  },
+  {
+    id: "lv3_thumb_back",
+    nameKey: "presetActions.thumbBack.name",
+    descKey: "presetActions.thumbBack.desc",
+    triggerTagKey: "presetActions.thumbBack.name",
+    level: 3,
+    isDefault: false,
+    order: 9,
+  },
+
+  {
+    id: "lv4_laugh",
+    nameKey: "presetActions.laugh.name",
+    descKey: "presetActions.laugh.desc",
+    triggerTagKey: "presetActions.laugh.name",
+    level: 4,
+    isDefault: true,
+    order: 1,
+  },
+  {
+    id: "lv4_continue",
+    nameKey: "presetActions.continue.name",
+    descKey: "presetActions.continue.desc",
+    triggerTagKey: "presetActions.continue.name",
+    level: 4,
+    isDefault: true,
+    order: 2,
+  },
+  {
+    id: "lv4_calm",
+    nameKey: "presetActions.calm.name",
+    descKey: "presetActions.calm.desc",
+    triggerTagKey: "presetActions.calm.name",
+    level: 4,
+    isDefault: true,
+    order: 3,
+  },
+  {
+    id: "lv4_cover_smile",
+    nameKey: "presetActions.coverSmile.name",
+    descKey: "presetActions.coverSmile.desc",
+    triggerTagKey: "presetActions.coverSmile.name",
+    level: 4,
+    isDefault: false,
+    order: 4,
+  },
+  {
+    id: "lv4_lean_in",
+    nameKey: "presetActions.leanIn.name",
+    descKey: "presetActions.leanIn.desc",
+    triggerTagKey: "presetActions.leanIn.name",
+    level: 4,
+    isDefault: false,
+    order: 5,
+  },
+  {
+    id: "lv4_self_boost",
+    nameKey: "presetActions.selfBoost.name",
+    descKey: "presetActions.selfBoost.desc",
+    triggerTagKey: "presetActions.selfBoost.name",
+    level: 4,
+    isDefault: false,
+    order: 6,
+  },
+  {
+    id: "lv4_me",
+    nameKey: "presetActions.me.name",
+    descKey: "presetActions.me.desc",
+    triggerTagKey: "presetActions.me.name",
+    level: 4,
+    isDefault: false,
+    order: 7,
+  },
+  {
+    id: "lv4_sorry",
+    nameKey: "presetActions.sorry.name",
+    descKey: "presetActions.sorry.desc",
+    triggerTagKey: "presetActions.sorry.name",
+    level: 4,
+    isDefault: false,
+    order: 8,
+  },
+  {
+    id: "lv4_side_step",
+    nameKey: "presetActions.sideStep.name",
+    descKey: "presetActions.sideStep.desc",
+    triggerTagKey: "presetActions.sideStep.name",
+    level: 4,
+    isDefault: false,
+    order: 9,
+  },
+
+  {
+    id: "lv5_relief",
+    nameKey: "presetActions.relief.name",
+    descKey: "presetActions.relief.desc",
+    triggerTagKey: "presetActions.relief.name",
+    level: 5,
+    isDefault: true,
+    order: 1,
+  },
+  {
+    id: "lv5_recall",
+    nameKey: "presetActions.recall.name",
+    descKey: "presetActions.recall.desc",
+    triggerTagKey: "presetActions.recall.name",
+    level: 5,
+    isDefault: true,
+    order: 2,
+  },
+  {
+    id: "lv5_listen",
+    nameKey: "presetActions.listen.name",
+    descKey: "presetActions.listen.desc",
+    triggerTagKey: "presetActions.listen.name",
+    level: 5,
+    isDefault: true,
+    order: 3,
+  },
+  {
+    id: "lv5_point_up",
+    nameKey: "presetActions.pointUp.name",
+    descKey: "presetActions.pointUp.desc",
+    triggerTagKey: "presetActions.pointUp.name",
+    level: 5,
+    isDefault: false,
+    order: 4,
+  },
+  {
+    id: "lv5_tease",
+    nameKey: "presetActions.tease.name",
+    descKey: "presetActions.tease.desc",
+    triggerTagKey: "presetActions.tease.name",
+    level: 5,
+    isDefault: false,
+    order: 5,
+  },
+  {
+    id: "lv5_celebrate",
+    nameKey: "presetActions.celebrate.name",
+    descKey: "presetActions.celebrate.desc",
+    triggerTagKey: "presetActions.celebrate.name",
+    level: 5,
+    isDefault: false,
+    order: 6,
+  },
+  {
+    id: "lv5_soft_reject",
+    nameKey: "presetActions.softReject.name",
+    descKey: "presetActions.softReject.desc",
+    triggerTagKey: "presetActions.softReject.name",
+    level: 5,
+    isDefault: false,
+    order: 7,
+  },
+  {
+    id: "lv5_fist_greet",
+    nameKey: "presetActions.fistGreet.name",
+    descKey: "presetActions.fistGreet.desc",
+    triggerTagKey: "presetActions.fistGreet.name",
+    level: 5,
+    isDefault: false,
+    order: 8,
+  },
+  {
+    id: "lv5_neat",
+    nameKey: "presetActions.neat.name",
+    descKey: "presetActions.neat.desc",
+    triggerTagKey: "presetActions.neat.name",
+    level: 5,
+    isDefault: false,
+    order: 9,
+  },
+];
+
+export const getPresetActionsByLevel = (level: number): PresetAction[] => {
+  return PRESET_ACTIONS.filter((action) => action.level === level).sort(
+    (a, b) => a.order - b.order
+  );
+};
+
+export const getDefaultActionsByLevel = (level: number): PresetAction[] => {
+  return PRESET_ACTIONS.filter(
+    (action) => action.level === level && action.isDefault
+  ).sort((a, b) => a.order - b.order);
+};
+
+export const getOptionalActionsByLevel = (level: number): PresetAction[] => {
+  return PRESET_ACTIONS.filter(
+    (action) => action.level === level && !action.isDefault
+  ).sort((a, b) => a.order - b.order);
+};
+
+export const getAllUnlockedOptionalActions = (level: number): PresetAction[] => {
+  return PRESET_ACTIONS.filter(
+    (action) => action.level <= level && !action.isDefault
+  ).sort((a, b) => {
+    if (a.level !== b.level) return a.level - b.level;
+    return a.order - b.order;
+  });
+};
